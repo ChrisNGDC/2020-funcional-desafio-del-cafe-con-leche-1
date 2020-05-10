@@ -3,7 +3,9 @@ import PdePreludat
 
 -- Desafio 1
 
-zippear = implementame
+zippear :: [a] -> [b] -> [(a,b)]
+zippear (primero1:resto1) (primero2:resto2) = (primero1,primero2) : zippear resto1 resto2
+zippear _ _ = []
 
 -- Desafio 2
 
